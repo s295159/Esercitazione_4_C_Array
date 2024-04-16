@@ -89,11 +89,7 @@ bool ExportResult(const string& outputFilePath,
     file<< "w = [";
     for (unsigned int i = 0; i < n; i++)
     {
-        file<< w[i];
-        if (i != n - 1 )
-        {
-            file << " ";
-        }
+        file << w[i];
     }
 
     file<< "]" << endl;
@@ -102,17 +98,13 @@ bool ExportResult(const string& outputFilePath,
     for (unsigned int i = 0; i < n; i++)
     {
         file<< r[i];
-        if (i != n - 1 )
-        {
-            file << " ";
-        }
     }
 
     file<< "]" << endl;
 
 
-    file<< "Rate of return of the portfolio : "<< rateOfReturn << endl;
-    file<< "V = " << valuePortfolio << endl;
+    file<< "Rate of return of the portfolio : "<< setprecision(4) << rateOfReturn << endl;
+    file<< "V = " << setprecision(2) << valuePortfolio << endl;
 
     // Close File
     file.close();

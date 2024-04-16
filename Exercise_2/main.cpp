@@ -23,7 +23,7 @@ int main()
     {
         cout << "Import successful: " << endl;
         cout << " S = "<< S << ", n = "<< n <<endl;
-        cout << "w = " << ArrayToString(n, w) << endl;
+        cout << " w = " << ArrayToString(n, w) << endl;
         cout << " r = " << ArrayToString(n, r)<< endl;
     }
 
